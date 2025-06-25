@@ -1,0 +1,10 @@
+^C:\USERS\MAJOR\DOWNLOADS\ASSIGNMENT1\ASSIGNMENT1\BUILD\CMAKEFILES\C66666699FEA8EB4339964D5E4F4D8C2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/major/Downloads/Assignment1/Assignment1 -BC:/Users/major/Downloads/Assignment1/Assignment1/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/major/Downloads/Assignment1/Assignment1/build/Rasterizer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
