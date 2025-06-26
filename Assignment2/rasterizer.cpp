@@ -181,7 +181,7 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t) {
                     for(float j = 0.25 ; j < 1.0 ; j += 0.5){
                         if(insideTriangle(x + i + 0.5, y + j + 0.5, t.v)){
                             auto [alpha, beta, gamma] = computeBarycentric2D(x + i, y + j, t.v);
-                            float w_reciprocal = 1.0 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
+                            float w_reciprocal   = 1.0 / (alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
                             float z_interpolated = alpha * v[0].z() / v[0].w() + beta * v[1].z() / v[1].w() + gamma * v[2].z() / v[2].w();
                             z_interpolated *= w_reciprocal;
                             min_depth = std::min(min_depth, z_interpolated);
@@ -197,7 +197,7 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t) {
                 if(insideTriangle(x, y, t.v))
                 {
                     auto[alpha, beta, gamma] = computeBarycentric2D(x, y, t.v);
-                    float w_reciprocal = 1.0/(alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
+                    float w_reciprocal   = 1.0/(alpha / v[0].w() + beta / v[1].w() + gamma / v[2].w());
                     float z_interpolated = alpha * v[0].z() / v[0].w() + beta * v[1].z() / v[1].w() + gamma * v[2].z() / v[2].w();
                     z_interpolated *= w_reciprocal;
                     min_depth = std::min(min_depth, z_interpolated);            
@@ -258,8 +258,8 @@ rst::rasterizer::rasterizer(int w, int h) : width(w), height(h)
     frame_buf.resize(w * h);
     depth_buf.resize(w * h);
     //SSAA Begin
-    frame_buf_2xSSAA.resize(w * h);
-    depth_buf_2xSSAA.resize(w * h);
+    frame_buf_2xSSAA.resize(w * h * 4);
+    depth_buf_2xSSAA.resize(w * h * 4);
     //SSAA End
 }
 
