@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\major\Downloads\Assignment1\Assignment1\main.cpp">
+    <ClCompile Include="C:\Users\major\Downloads\GAMES101\Assignment1\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\major\Downloads\Assignment1\Assignment1\rasterizer.cpp">
+    <ClCompile Include="C:\Users\major\Downloads\GAMES101\Assignment1\rasterizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\major\Downloads\Assignment1\Assignment1\Triangle.cpp">
+    <ClCompile Include="C:\Users\major\Downloads\GAMES101\Assignment1\Triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\major\Downloads\Assignment1\Assignment1\rasterizer.hpp">
+    <ClInclude Include="C:\Users\major\Downloads\GAMES101\Assignment1\rasterizer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\major\Downloads\Assignment1\Assignment1\Triangle.hpp">
+    <ClInclude Include="C:\Users\major\Downloads\GAMES101\Assignment1\Triangle.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\major\Downloads\Assignment1\Assignment1\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\major\Downloads\GAMES101\Assignment1\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{6D5C259C-106B-3E7E-936E-AF8956C8D8D6}</UniqueIdentifier>
+      <UniqueIdentifier>{94FDCD09-CA86-3727-9E33-59654EA4074C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{70FDFE21-8142-3A80-A68A-8BB0C4F9C38B}</UniqueIdentifier>
+      <UniqueIdentifier>{0AB30035-576D-342B-A1A6-D495EDE6CE5F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -5,3 +5,6 @@ This repo contains homeworks from GAMES101. Please hit link for more information
 ### Assignment 1 - Perspective Projection & Rotation(Triangle)
 
 ![assignment1](./output/projection_triangle.png "perspective projection - triangle")
+
+### Assignment 2 - Rasterization with SSAA(without SSAA)(Triangle)
+![assignment2](./output/rasterization_SSAA.png "rasterization_SSAA - triangle")
